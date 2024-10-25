@@ -1,6 +1,5 @@
 #  В качестве исходного кода была выбрана сортировка слиянием
 def merge_sort(nums: list) -> None:
-    assert len(nums) != 0, 'empty list'
     if len(nums) > 1:
         mid = len(nums)//2
         left = nums[:mid]
@@ -24,9 +23,3 @@ def merge_sort(nums: list) -> None:
             nums[k] = right[j]
             j += 1
             k += 1
-
-
-if __name__ == '__main__':
-    a = []
-    merge_sort(a)
-    print(a)
