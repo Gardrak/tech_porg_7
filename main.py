@@ -21,4 +21,4 @@ class Root:
 
 
 if __name__ == '__main__':
-    print(Root.get_root(2))
+    print(type(Root.get_root(12)))

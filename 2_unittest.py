@@ -10,7 +10,10 @@ class TestMergeSort(unittest.TestCase):
         self.assertEqual(self.root.get_root(25), 5)
 
     def test_2(self):
-        self.assertIs(self.root.get_root(12.5), int)
+        self.assertIs(type(self.root.get_root(12)), int)
+
+    def test_3(self):
+        self.assertIs(type(self.root.get_root(12.5)), int)
 
 
 if __name__ == '__main__':
